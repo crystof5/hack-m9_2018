@@ -135,7 +135,7 @@
                 echo "Erreur de connexion à la base de données.";
             } else {
                 // on fait maintenant la requête dans la base de données pour rechercher si ces données existe et correspondent:
-                $Requete = mysqli_query($mysqli,"SELECT * FROM users WHERE username = '".$username."' AND password = '".sha($password,512)."'");
+                $Requete = mysqli_query($mysqli,"SELECT * FROM users WHERE username = '".$username."' AND password = '".hash('sha512',$password)."'");
                 // si il y a un résultat, mysqli_num_rows() nous donnera alors 1
                 // si mysqli_num_rows() retourne 0 c'est qu'il a trouvé aucun résultat
                 if(mysqli_num_rows($Requete) == 0) {
