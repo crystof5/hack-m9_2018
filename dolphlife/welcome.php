@@ -89,7 +89,7 @@ if(!$_SESSION['username']) {
 </header>
 
 
-<a href="fichier/" target="_blank">Download</a>  
+
 
 <section id="prices" class="pricing-area section-padding">
     <div class="container">
@@ -102,7 +102,7 @@ if(!$_SESSION['username']) {
             </div>
         </div>
         <div >
-        <a href="fichier/" target="_blank" class="form-control" style="text-align:center;">  >>Go to Doc<<</a>
+        <a href="fichiers/" target="_blank" class="form-control" style="text-align:center;">  >>Go to Doc<<</a>
         
         </div>
     </div>
